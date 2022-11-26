@@ -35,4 +35,9 @@ public class MemoryMemberRepository implements MemberRepository{ //MemoryMemberR
 
         return new ArrayList<>(store.values()); // store.values의 값은 values 즉 private static Map<Long, Member> 중 Member가 ArrayList를 생성해서 반환함
     }                                           //                                                     이 Member는 Member classs임
+
+    public void clearStore() {
+        store.clear(); //메소드 clearStore가 실행되면 store에 있는 데이터 값을 .clear() 전부 삭제한다
+    }
+
 }
