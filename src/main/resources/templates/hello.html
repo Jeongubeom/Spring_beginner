@@ -1,0 +1,13 @@
+
+<html xmlns:th="http://www.thymeleaf.org"><!--thymeleaf 템플릿엔진 사용-->
+<head>
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p th:text="'I love. ' + ${data}" >안녕하세요. 손님</p>
+<!--th는 타임리프의 문법사용//+ ${data 이것은 controller 아래에 HelloControler에 입력한 model.addAttribute("data", "hello!!"); 이거임}-->
+<!-- ${date}이것은 키 값-->
+
+</body>
+</html>
