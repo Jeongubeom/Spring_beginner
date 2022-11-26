@@ -49,7 +49,8 @@ public class HelloController {
 
         //alt+insert누르고 get 및 setter 생성
         private String name; //String name은 Hello의 value의 key 값
-
+                             //private 매소드는 외부에서 바로 꺼낼 수 없음
+                             //이 하나의 알고리즘이 자바 빈 표준이라고 한다고 카더라
         public String getName() {  //
             return name;
         }
